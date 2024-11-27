@@ -17,7 +17,7 @@ import kapil_sharma_show from "../assets/images/kapil_sharma_show.jpg";
 import khel_khel_mein from "../assets/images/khel_khel_mein.jpg";
 import Nayanthara from "../assets/images/Nayanthara.png";
 import The_buckingham from "../assets/images/The_buckingham.jpg";
-import { FaHandSparkles } from "react-icons/fa";
+// import { FaHandSparkles } from "react-icons/fa";
 import money_heist from "../assets/images_only_netflix/money_heist.jpg";
 import stranger_things from "../assets/images_only_netflix/stranger_things.jpg";
 import lucifer from "../assets/images_only_netflix/lucifer.jpg";
@@ -28,12 +28,18 @@ import queen_of_tears from "../assets/images_only_netflix/queen_of_tears.jpg";
 import my_demon from "../assets/images_only_netflix/my_demon.jpg";
 import sector_36 from "../assets/images_only_netflix/sector_36.jpg";
 import helicopter_heist from "../assets/images_only_netflix/helicopter_heist.jpg";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Stranger_things from "../assets/videos/Stranger_things.mp4";
 import N_logo from "../assets/images/N_logo.png";
 
 function Header() {
   const [showanswer, setShowanswer] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  // const [isplaying, setIsplaying] = useState(false);
+
+  // const handlePlay = () => setIsplaying(true);
+  // const handlePause = () => setIsplaying(false);
 
   const handlleShowClick = (index) => {
     setShowanswer(showanswer === index ? null : index);
@@ -84,11 +90,19 @@ function Header() {
 
       <div className="flex justify-center items-center mt-5 relative bg-transparent">
         <div
-          style={{ border: "1px solid white" }}
+          // style={{ border: "1px solid white" }}
           id="Hero"
           className="flex flex-col justify-center items-center w-[90%] rounded-2xl h-[400px] 
          "
         >
+          <video
+            className="object-cover w-full h-[380px] rounded-2xl shadow  "
+            autoPlay
+            loop
+            playsInline
+            preload="auto"
+            src={Stranger_things}
+          ></video>
           <div className="absolute top-[200px] flex flex-col justify-center items-center">
             <h1 className="sm:text-5xl text-4xl  text-white text-center font-extrabold ">
               Unlimited movies, TV <br />

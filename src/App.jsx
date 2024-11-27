@@ -8,11 +8,11 @@ import StepTwo from "./Components/GetStarted/StepTwo";
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {/* <SignIn /> */}
       {/* <StepOne /> */}
-      <StepTwo />
-      {/* <Footer /> */}
+      {/* <StepTwo /> */}
+      <Footer />
     </>
   );
 }
