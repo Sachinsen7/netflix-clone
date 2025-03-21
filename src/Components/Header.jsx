@@ -9,7 +9,16 @@ import {
   FaStar,
   FaTv,
 } from "react-icons/fa";
-import paul_miketyson from "../assets/images/paul_miketyson.jpg";
+import ajith from "../assets/New Images/ajith.jpg";
+import images from "../assets/New Images/images.jpg";
+import dabba from "../assets/New Images/dabba.jpg";
+import daku from "../assets/New Images/daku.jpg";
+import emergency from "../assets/New Images/emergency.jpg";
+import nadaniyan from "../assets/New Images/nadaniyan.jpg";
+import officer from "../assets/New Images/officer.jpg";
+import pushpa2 from "../assets/New Images/pushpa2.jpg";
+import squid from "../assets/New Images/squid.jpg";
+import Thandel_film from "../assets/New Images/Thandel_film.jpg";
 import animal from "../assets/images/animal.jpg";
 import devara from "../assets/images/devara.jpg";
 import do_patti from "../assets/images/do_patti.jpg";
@@ -18,15 +27,9 @@ import kapil_sharma_show from "../assets/images/kapil_sharma_show.jpg";
 import khel_khel_mein from "../assets/images/khel_khel_mein.jpg";
 import Nayanthara from "../assets/images/Nayanthara.png";
 import The_buckingham from "../assets/images/The_buckingham.jpg";
-import money_heist from "../assets/images_only_netflix/money_heist.jpg";
-import stranger_things from "../assets/images_only_netflix/stranger_things.jpg";
 import lucifer from "../assets/images_only_netflix/lucifer.jpg";
-import tribhuvan from "../assets/images_only_netflix/tribhuvan.jpg";
 import king_the_land from "../assets/images_only_netflix/king_the_land.jpg";
 import cobra_kai from "../assets/images_only_netflix/cobra_kai.jpg";
-import queen_of_tears from "../assets/images_only_netflix/queen_of_tears.jpg";
-import my_demon from "../assets/images_only_netflix/my_demon.jpg";
-import sector_36 from "../assets/images_only_netflix/sector_36.jpg";
 import helicopter_heist from "../assets/images_only_netflix/helicopter_heist.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -58,183 +61,109 @@ function Header() {
   const trendingMovies = [
     {
       id: 1,
-      src: paul_miketyson,
-      title: "Paul vs Mike Tyson",
-      year: "2024",
-      rating: "UA 16+",
-      type: "Movie",
-      genres: ["Action", "Drama"],
-      description: "A thrilling match between two boxing legends.",
+      src: images,
+      title: "Khakee: The Bengal Chapter",
+      year: "2023",
+      rating: "UA",
+      type: "Series",
+      genres: ["Mystery", "Thriller"],
+      description: "A Fictional story.",
     },
     {
       id: 2,
-      src: Nayanthara,
-      title: "Nayanthara",
-      year: "2023",
-      rating: "UA 13+",
+      src: pushpa2,
+      title: "Pushpa 2",
+      year: "2024",
+      rating: "UA 16+",
       type: "Movie",
-      genres: ["Drama", "Romance"],
-      description: "A heartfelt story of love and resilience.",
+      genres: ["Action", "Thriller"],
+      description: "The much-awaited sequel to the blockbuster 'Pushpa'.",
     },
     {
       id: 3,
-      src: khel_khel_mein,
-      title: "Khel Khel Mein",
-      year: "2024",
+      src: officer,
+      title: "Officer on Duty",
+      year: "2025",
       rating: "UA 16+",
-      type: "Movie",
-      genres: ["Comedy", "Drama"],
-      description: "A fun-filled drama with unexpected twists.",
+      type: "Series",
+      genres: ["Crime", "Thriller"],
+      description: "An honest officer takes on a corrupt system.",
     },
     {
       id: 4,
-      src: animal,
-      title: "Animal",
-      year: "2023",
+      src: squid,
+      title: "Squid",
+      year: "2024",
       rating: "UA 18+",
-      type: "Movie",
-      genres: ["Action", "Thriller"],
-      description: "A raw and intense action-packed thriller.",
+      type: "Series",
+      genres: ["Thriller", "Survival"],
+      description: "A deadly game with high stakes and unexpected twists.",
     },
     {
       id: 5,
-      src: The_buckingham,
-      title: "The Buckingham",
-      year: "2022",
+      src: ajith,
+      title: "Vidaamuyarchi",
+      year: "2025",
       rating: "UA 16+",
       type: "Movie",
-      genres: ["Mystery", "Drama"],
-      description: "A mysterious tale set in a historic mansion.",
+      genres: ["Action", "Thriller"],
+      description: "A high-octane action thriller starring Ajith Kumar.",
     },
     {
       id: 6,
-      src: do_patti,
-      title: "Do Patti",
-      year: "2024",
-      rating: "UA 13+",
-      type: "Movie",
-      genres: ["Thriller", "Drama"],
-      description: "A suspenseful drama with dual identities.",
-    },
-    {
-      id: 7,
-      src: GOAT,
-      title: "GOAT",
-      year: "2024",
+      src: emergency,
+      title: "Emergency",
+      year: "2025",
       rating: "UA 16+",
       type: "Movie",
-      genres: ["Action", "Sports"],
-      description: "A sports drama about the greatest of all time.",
+      genres: ["Political", "Drama"],
+      description:
+        "A gripping tale set in the backdrop of India's Emergency period.",
+    },
+
+    {
+      id: 7,
+      src: nadaniyan,
+      title: "Nadaaniyan",
+      year: "2025",
+      rating: "UA 7+",
+      type: "Movie",
+      genres: ["Comedy", "Family"],
+      description:
+        "A fun-filled family entertainer with hilarious misadventures.",
     },
     {
       id: 8,
-      src: kapil_sharma_show,
-      title: "Kapil Sharma Show",
-      year: "2023",
+      src: Thandel_film,
+      title: "Thandel",
+      year: "2025",
       rating: "UA 13+",
-      type: "Show",
-      genres: ["Comedy", "Talk Show"],
-      description: "A hilarious talk show with celebrity guests.",
+      type: "Movie",
+      genres: ["Drama", "Action"],
+      description: "A compelling story of bravery and sacrifice.",
     },
     {
       id: 9,
-      src: devara,
-      title: "Devara",
-      year: "2024",
-      rating: "UA 16+",
+      src: daku,
+      title: "Daku Maharaj",
+      year: "2025",
+      rating: "A",
       type: "Movie",
-      genres: ["Action", "Drama"],
-      description: "An epic tale of power and vengeance.",
+      genres: ["Action", "Adventure"],
+      description:
+        "a story of a daring robber striving for survival and establishing his own territory while fighting with powerful adversaries.",
     },
+
     {
       id: 10,
-      src: stranger_things,
-      title: "Stranger Things",
-      year: "2022",
-      rating: "UA 16+",
-      type: "Show",
-      genres: ["Sci-Fi", "Horror"],
-      description: "A thrilling sci-fi adventure in a small town.",
-    },
-    {
-      id: 11,
-      src: lucifer,
-      title: "Lucifer",
-      year: "2021",
-      rating: "UA 16+",
-      type: "Show",
-      genres: ["Drama", "Fantasy"],
-      description: "A devilish tale with a twist of humor.",
-    },
-    {
-      id: 12,
-      src: cobra_kai,
-      title: "Cobra Kai",
-      year: "2022",
+      src: dabba,
+      title: "Dabba Cartel",
+      year: "2025",
       rating: "UA 13+",
-      type: "Show",
-      genres: ["Action", "Drama"],
-      description: "The Karate Kid saga continues.",
-    },
-    {
-      id: 13,
-      src: queen_of_tears,
-      title: "Queen of Tears",
-      year: "2023",
-      rating: "UA 13+",
-      type: "Show",
-      genres: ["Romance", "Drama"],
-      description: "A touching story of love and tears.",
-    },
-    {
-      id: 14,
-      src: tribhuvan,
-      title: "Tribhuvan Mishra",
-      year: "2024",
-      rating: "UA 16+",
-      type: "Show",
-      genres: ["Comedy", "Drama"],
-      description: "A quirky tale of modern life.",
-    },
-    {
-      id: 15,
-      src: helicopter_heist,
-      title: "Helicopter Heist",
-      year: "2023",
-      rating: "UA 16+",
-      type: "Movie",
-      genres: ["Action", "Crime"],
-      description: "A daring heist in the skies.",
-    },
-    {
-      id: 16,
-      src: king_the_land,
-      title: "King the Land",
-      year: "2023",
-      rating: "UA 13+",
-      type: "Show",
-      genres: ["Romance", "Comedy"],
-      description: "A royal romantic comedy.",
-    },
-    {
-      id: 17,
-      src: my_demon,
-      title: "My Demon",
-      year: "2023",
-      rating: "UA 16+",
-      type: "Show",
-      genres: ["Fantasy", "Romance"],
-      description: "A demon finds love unexpectedly.",
-    },
-    {
-      id: 18,
-      src: sector_36,
-      title: "Sector 36",
-      year: "2024",
-      rating: "UA 18+",
-      type: "Movie",
-      genres: ["Thriller", "Crime"],
-      description: "A dark crime thriller.",
+      type: "Series",
+      genres: ["Crime", "Drama"],
+      description:
+        "a home chef's dabba (tiffin) delivery business spirals into a perilous drug operation",
     },
   ];
 
@@ -313,7 +242,7 @@ function Header() {
       </div>
       {/* // The Hero */}
 
-      <div className="flex justify-center items-center mt-5 relative bg-transparent">
+      <div className="flex justify-center items-center mt-12 relative bg-transparent">
         <div
           // style={{ border: "1px solid white" }}
           id="Hero"
@@ -321,14 +250,14 @@ function Header() {
          "
         >
           <video
-            className="object-cover w-full h-[380px] rounded-2xl shadow  "
+            className="object-cover w-full h-[500px] rounded-2xl shadow  "
             autoPlay
             loop
             playsInline
             preload="auto"
             src={Stranger_things}
           ></video>
-          <div className="absolute top-[200px] flex flex-col justify-center items-center">
+          <div className="absolute top-[250px] flex flex-col justify-center items-center">
             <h1 className="sm:text-5xl text-3xl  text-white text-center font-extrabold ">
               Unlimited movies, TV <br />
               shows and more
@@ -340,7 +269,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="flex justify-center w-[400px] sm:w-full p-5 items-center text-white mt-10">
+      <div className="flex justify-center w-[400px] sm:w-full p-5 items-center text-white mt-14 ">
         <p>
           Ready to watch? Enter your email to create or restart your membership
         </p>
@@ -369,17 +298,19 @@ function Header() {
           <div className="text-3xl font-bold text-white mb-4 ml-7 sm:ml-40">
             Trending Movies
           </div>
-          <div className="flex gap-4 sm:gap-6 overflow-x-auto pb-4 ml-7 sm:ml-40 scrollbar-hide">
+          <div className="flex gap-4 sm:gap-6 overflow-x-auto pb-4 ml-7 sm:ml-40 scrollbar-hide cursor-pointer">
             {trendingMovies.slice(0, 9).map(renderMovieCard)}
             {[
-              cobra_kai,
-              helicopter_heist,
-              king_the_land,
-              lucifer,
-              do_patti,
-              GOAT,
-              kapil_sharma_show,
-              devara,
+              // ajith,
+              // dabba,
+              // emergency,
+              // daku,
+              // images,
+              // nadaniyan,
+              // officer,
+              // pushpa2,
+              // squid,
+              // Thandel_film,
             ].map((src, index) => (
               <div key={index} className="relative group flex-shrink-0 w-48">
                 <img
@@ -396,12 +327,12 @@ function Header() {
       {/* Another Cards */}
 
       <div className="">
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <div className="text-3xl font-bold text-white mb-4 ml-7 sm:ml-40">
             Only On Netflix
           </div>
           <div className="flex gap-4 sm:gap-6 overflow-x-auto pb-4 ml-7 sm:ml-40 scrollbar-hide">
-            {trendingMovies.slice(0, 9).map(renderMovieCard)}
+            {trendingMovies.slice(1, 9).map(renderMovieCard)}
             {[
               Nayanthara,
               khel_khel_mein,
@@ -421,7 +352,7 @@ function Header() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {trendingMovies.map((movie) => {
           <div
@@ -455,11 +386,20 @@ function Header() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90"></div>
               </div>
               <button
-                className="absolute top-4 right-4 text-white text-3xl hover:bg-gray-500 transition-colors duration-300 py-3 rounded-full w-8 h-11 flex items-center justify-center"
+                className="absolute top-4 right-4 text-white text-3xl  transition-colors duration-300 py-3 rounded-full w-8 h-11 flex items-center justify-center"
                 onClick={closePalette}
               >
-                {" "}
-                x{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="white"
+                >
+                  <path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"></path>
+                </svg>
               </button>
               <div className="p-6 bg-black bg-opacity-90">
                 <h2 className="text-3xl font-bold text-white mb-2"></h2>

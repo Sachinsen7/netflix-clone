@@ -45,15 +45,18 @@ function StepTwo() {
             </p>
           </div>
           <form
+            onSubmit={handleNext}
             action=""
             className="flex flex-col items-center justify-center w-full mt-4 sm:mt-6"
           >
             <input
+              required
               type="email"
               placeholder="Email or mobile number"
               className="w-full max-w-[360px] sm:max-w-[450px] h-14 sm:h-16 p-4 sm:p-5 text-gray-950 bg-transparent border-gray-300 border rounded-sm focus:outline-none focus:ring focus:ring-blue-300 mt-4"
             />
             <input
+              required
               type="password"
               placeholder="Password"
               className="w-full max-w-[360px] sm:max-w-[450px] h-14 sm:h-16 p-4 sm:p-5 text-gray-950 bg-transparent border-gray-300 border rounded-sm focus:outline-none focus:ring focus:ring-blue-300 mt-4"
@@ -61,7 +64,6 @@ function StepTwo() {
             <button
               style={{ backgroundColor: "rgb(246, 19, 29)" }}
               className="text-white bg-red-700 mt-5 rounded-sm font-semibold w-full max-w-[300px] sm:max-w-[450px] h-14 sm:h-16 text-lg sm:text-xl hover:bg-red-600 transition-colors duration-300"
-              onClick={handleNext}
             >
               Next
             </button>
