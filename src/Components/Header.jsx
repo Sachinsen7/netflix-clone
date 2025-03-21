@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Netflix_logo from "../assets/images/Netflix_logo.png";
+import Netflix_logo from "../assets/images/New folder/Netflix_logo.png";
 import {
   FaHandHolding,
   FaHandshake,
@@ -19,18 +19,7 @@ import officer from "../assets/New Images/officer.jpg";
 import pushpa2 from "../assets/New Images/pushpa2.jpg";
 import squid from "../assets/New Images/squid.jpg";
 import Thandel_film from "../assets/New Images/Thandel_film.jpg";
-import animal from "../assets/images/animal.jpg";
-import devara from "../assets/images/devara.jpg";
-import do_patti from "../assets/images/do_patti.jpg";
-import GOAT from "../assets/images/GOAT.jpg";
-import kapil_sharma_show from "../assets/images/kapil_sharma_show.jpg";
-import khel_khel_mein from "../assets/images/khel_khel_mein.jpg";
-import Nayanthara from "../assets/images/Nayanthara.png";
-import The_buckingham from "../assets/images/The_buckingham.jpg";
-import lucifer from "../assets/images_only_netflix/lucifer.jpg";
-import king_the_land from "../assets/images_only_netflix/king_the_land.jpg";
-import cobra_kai from "../assets/images_only_netflix/cobra_kai.jpg";
-import helicopter_heist from "../assets/images_only_netflix/helicopter_heist.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Stranger_things from "../assets/videos/Stranger_things.mp4";
