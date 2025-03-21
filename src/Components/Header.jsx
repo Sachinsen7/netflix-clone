@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Netflix_logo from "../assets/images/New folder/Netflix_logo.png";
+import Netflix_logo from "../assets/images/Netflix_logo.png";
 import {
   FaHandHolding,
   FaHandshake,
