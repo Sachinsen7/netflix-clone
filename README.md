@@ -65,7 +65,7 @@ netflix-signup-flow/
 - Test the responsiveness on mobile and desktop.
 
 ## Live Demo
-[View the Live Demo](#) *(Ensure the link is active after deployment.)*
+[View the Live Demo](#) *([Ensure the link is active after deployment.](https://netflix-clone-sachinsen7s-projects.vercel.app/))*
 
 ## Notes
 - The hero section video is muted by default due to browser autoplay policies.
