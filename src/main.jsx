@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import Header from "./Components/Header.jsx";
 import Footer from "./Components/Footer.jsx";
-import SignIn from "./Components/Signin.jsx";
+import Signin from "./Components/Signin.jsx";
 import StepOne from "./Components/GetStarted/StepOne.jsx";
 import StepTwo from "./Components/GetStarted/StepTwo.jsx";
 import StepThree from "./Components/GetStarted/StepThree.jsx";
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "signin",
-        element: <SignIn />,
+        element: <Signin />,
       },
       {
         path: "stepone",
