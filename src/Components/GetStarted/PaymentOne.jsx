@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Netflix_logo from "../../assets/images/Netflix_logo.png";
+import Netflix_logo from "../../../src/assets/images/Netflix_logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function StepFourCard() {
