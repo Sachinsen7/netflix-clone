@@ -1,5 +1,5 @@
 import React from "react";
-import Netflix_logo from "../../assets/images/Netflix_logo.png";
+import Netflix_logo from "../../assets/Netflix_Logo.png";
 import imageVisa from "../../assets/StepOneImages/imageVisa.png";
 import masterCard from "../../assets/StepOneImages/masterCard.png";
 import bhim from "../../assets/StepOneImages/bhim.png";
