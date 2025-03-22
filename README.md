@@ -71,6 +71,11 @@ netflix-signup-flow/
 - The hero section video is muted by default due to browser autoplay policies.
 - Form validation ensures all required fields are filled before proceeding.
 
+- ## Contact
+- **LinkedIn**: [[Your LinkedIn Profile](https://www.linkedin.com/in/sachinsen1/)](#)
+- **Email**: sachinsen1920@gmail.com
+
+
 ## Contributing
 - Fork the repository and create a pull request with your changes.
 
