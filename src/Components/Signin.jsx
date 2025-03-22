@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import netflixCover from "../assets/SignIn/netflixCover.jpg";
-import Netflix_logo from "../assets/images/Netflix_logo.png";
+import Netflix_logo from "../../src/assets/images/Netflix_logo.png";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
