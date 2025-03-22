@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import netflixCover from "../assets/SignIn/netflixCover.jpg";
-import Netflix_logo from "../assets/Netflix_logo.png";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Netflix_logo from "../assets/Netflix_Logo.png";
 
 function SignIn() {
   const [email, setEmail] = useState("");
