@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Netflix_logo from "../assets/Netflix_Logo.png";
 import {
   FaHandHolding,
@@ -25,12 +25,41 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Stranger_things from "../assets/videos/Stranger_things.mp4";
 import N_logo from "../assets/images/N_logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { useRef } from "react";
 
 function Header() {
   const [showanswer, setShowanswer] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [setMovie, setSelectMovie] = useState(null);
   const [email, setEmail] = useState("");
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    const playVideo = async () => {
+      try {
+        await video.play();
+      } catch (err) {
+        console.log("Autoplay failed:", err);
+        video.muted = true;
+        video.play();
+      }
+    };
+
+    if (video) {
+      playVideo();
+
+      video.currentTime = 0;
+    }
+
+    return () => {
+      if (video) {
+        video.pause();
+      }
+    };
+  }, []);
 
   const handleShowClick = (index) => {
     setShowanswer(showanswer === index ? null : index);
@@ -189,41 +218,44 @@ function Header() {
     // The NavBar
 
     <div className="h-full overflow-hidden bg-gradient-to-b from-gradientEnd to-gradientStart  ">
-      <div className="pt-2 px-4 sm:px-6 md:px-10 flex flex-wrap justify-between items-center">
+      <div className="bg-gradient-to-b from-black to-transparent pt-2 px-4 sm:px-6 md:px-10 flex justify-between items-center">
+        {/* Logo */}
         <div className="flex-shrink-0">
           <img
             src={Netflix_logo}
             alt="Netflix Logo"
-            className="h-12 sm:h-16 md:h-20 hidden md:block"
-          />
-          <img
-            src={N_logo}
-            alt="Netflix Small Logo"
-            className="h-8 sm:h-10 md:hidden inline-block"
+            className="h-12 sm:h-14 md:h-16"
           />
         </div>
-        <div className="flex justify-end  items-center space-x-4 sm:space-x-6  sm:mt-0 w-full sm:w-auto">
-          <div className="border border-gray-400 flex items-center rounded-full p-1 w-full max-w-[8rem] sm:max-w-[12rem]">
+
+        {/* Right Side: Language Selector + Sign In */}
+        <div className="flex items-center space-x-3 sm:space-x-4">
+          {/* Language Selector */}
+          <div className="relative bg-white bg-opacity-90 border border-gray-300 rounded-md flex items-center px-2 py-1">
             <FontAwesomeIcon
               icon={faGlobe}
-              className="text-white text-lg sm:text-xl pl-2 flex-shrink-0"
+              className="text-black text-sm sm:text-base flex-shrink-0"
             />
             <select
-              className="bg-transparent outline-none text-xs sm:text-sm text-white font-semibold pl-2 w-full appearance-none cursor-pointer"
+              className="bg-transparent outline-none text-xs sm:text-sm text-black font-semibold pl-2 pr-6 appearance-none cursor-pointer"
               defaultValue="English"
             >
-              <option value="English" className="bg-gray-800 text-white">
+              <option value="English" className="bg-white text-black">
                 English
               </option>
-              <option value="Hindi" className="bg-gray-800 text-white">
+              <option value="Hindi" className="bg-white text-black">
                 Hindi
               </option>
             </select>
+            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none">
+              ▼
+            </span>
           </div>
 
+          {/* Sign In Button */}
           <NavLink
             to="/signIn"
-            className="bg-white w-16 sm:w-full text-center text-sm sm:text-lg p-0 text-black px-3 py-1 rounded-2xl font-semibold hover:bg-slate-200"
+            className="bg-white text-black text-sm sm:text-base px-4 py-1 rounded-md font-semibold hover:bg-gray-200 transition-colors duration-300"
           >
             Sign In
           </NavLink>
@@ -241,10 +273,12 @@ function Header() {
           <video
             className="object-cover w-full h-[500px] rounded-2xl shadow  "
             autoPlay
+            ref={videoRef}
             loop
             playsInline
             preload="auto"
             src={Stranger_things}
+            muted
           ></video>
           <div className="absolute top-[250px] flex flex-col justify-center items-center">
             <h1 className="sm:text-5xl text-3xl  text-white text-center font-extrabold ">
